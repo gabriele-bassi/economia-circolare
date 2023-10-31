@@ -100,12 +100,6 @@ li {
     font-size: 19px;
 }
 
-
-.card1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 .cardP1 {
     text-align: justify;
     grid-column-start: 2;
@@ -151,4 +145,53 @@ li {
     grid-row-start: 2;
     align-self: center;
     justify-self: center;
+}
+
+@media screen and (max-width: 900px) {
+
+
+    .indice {
+        font-size: 20px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #immagineP1 {
+
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    #immagineP3 {
+
+        grid-column-start: 1;
+        grid-row-start: 5;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #immagineP4 {
+
+        grid-column-start: 1;
+        grid-row-start: 6;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .cardP1 {
+        grid-column-start: 1;
+        text-align: justify;
+        margin: 5px;
+    }
+
+
+    .cardP3 {
+
+        grid-column-end: 1;
+
+
+    }
 }
