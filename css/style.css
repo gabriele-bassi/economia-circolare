@@ -148,8 +148,6 @@ li {
 }
 
 @media screen and (max-width: 900px) {
-
-
     .indice {
         font-size: 20px;
     }
@@ -163,6 +161,19 @@ li {
 
         grid-column-start: 1;
         grid-row-start: 3;
+    }
+
+    .content {
+        margin: 5px;
+    }
+
+    .cover {
+        margin: 5px;
+    }
+
+    .continer {
+        margin: 0px;
+        padding: 10px;
     }
 
     #immagineP3 {
