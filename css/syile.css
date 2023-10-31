@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(180deg, rgba(37, 37, 37, 0.5914740896358543) 0%, rgba(165, 255, 136, 0.6615021008403361) 100%);
+}
+
+
+
+#title {
+    font-size: 40px;
+    color: white;
+    margin: 0px;
+}
+
+#red {
+    color: #D80032;
+}
+
+#white {
+    color: white;
+}
+
+#green {
+    color: #0EAD69;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    height: 95px;
+    background-color: transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    line-height: 95px;
+}
+
+.cover {
+    background: rgb(0, 0, 0);
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.852), rgba(255, 255, 255, 0)),
+        url('/images/Economia-Circolare.webp');
+    height: 500px;
+    margin: 20px;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 0px
+}
+
+#titleCover {
+    color: white;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /* grid-column-start: 3; */
+}
+
+.indice {
+    font-weight: bold;
+    color: #d7d7d7;
+    font-size: 25px;
+    grid-row-start: 2;
+    text-align: center;
+
+}
+
+
+.content {
+    margin: 25px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cardTitle {
+    font-size: 28px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+
+.cardP,
+li {
+    font-size: 19px;
+}
+
+
+.card1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cardP1 {
+    text-align: justify;
+    grid-column-start: 2;
+    margin: 5px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+.cardP3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+}
+
+.card4 #subTitle {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#immagineP1 {
+    height: 350px;
+    width: 400px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+#immagineP3 {
+    height: 70px;
+    width: 400px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+#immagineP4 {
+    height: 350px;
+    width: 350px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: center;
+    justify-self: center;
+}
