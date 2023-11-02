@@ -92,6 +92,7 @@ body {
 }
 
 .card {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -131,8 +132,8 @@ ul {
 }
 
 #immagineP1 {
-    height: 350px;
-    width: 400px;
+    height: 500px;
+    width: 600px;
     grid-column-start: 1;
     grid-row-start: 2;
     align-self: center;
@@ -143,7 +144,7 @@ ul {
     /* grid-column-start: 2; */
     justify-self: center;
     align-self: center;
-    height: 100px;
+    height: 230px;
     width: 400px;
 }
 
