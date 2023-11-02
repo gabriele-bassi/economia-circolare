@@ -312,6 +312,10 @@ ul {
         margin: 5px;
     }
 
+    .cardProd2 {
+        grid-column-start: 1;
+        grid-row-start: unset;
+    }
 
     .cardP3 {
         grid-column-end: 1;
@@ -321,4 +325,7 @@ ul {
         grid-column-start: 1;
     }
 
+    .footer {
+        font-size: 15px;
+    }
 }
