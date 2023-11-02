@@ -2,6 +2,7 @@
 
 html::-webkit-scrollbar {
     display: none;
+
 }
 
 
@@ -12,7 +13,8 @@ body {
     flex-direction: column;
     padding: 0px;
     margin: 0px;
-    background: linear-gradient(180deg, rgba(37, 37, 37, 0.5914740896358543) 0%, rgba(165, 255, 136, 0.6615021008403361) 100%);
+    background-image: linear-gradient(to top, #7e7d7d, #8398abc6, #76b7bfe1, #78c7b4, #79985f);
+    ;
 }
 
 
@@ -48,22 +50,27 @@ body {
 .cover {
     background: rgb(0, 0, 0);
     background-image:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.852), rgba(255, 255, 255, 0)),
-        url('../images/Economia-Circolare.webp');
+        linear-gradient(to bottom, #79985f, rgba(0, 0, 0, 0.487), #79ab80),
+        url('../images/coverEconomia.jpg');
+
     height: 500px;
-    margin: 20px;
+    margin: 0px;
     border-radius: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 0px
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 0px;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
 }
 
 #titleCover {
     color: white;
     text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    /* grid-column-start: 3; */
+    grid-column-start: 3;
+    grid-column-end: 5;
+    font-size: 40px;
+    font-weight: bolder;
 }
 
 .indice {
@@ -96,12 +103,13 @@ body {
 
 
 .cardP,
-li {
+li,
+ul {
     font-size: 19px;
+    text-align: justify;
 }
 
 .cardP1 {
-    text-align: justify;
     grid-column-start: 2;
     margin: 5px;
     grid-row-start: 2;
@@ -115,7 +123,7 @@ li {
     grid-row-start: 2;
 }
 
-.card4 #subTitle {
+#subTitle {
     font-weight: bolder;
     font-size: 18px;
 }
@@ -129,8 +137,16 @@ li {
     justify-self: center;
 }
 
+#immagineP2 {
+    /* grid-column-start: 2; */
+    justify-self: center;
+    align-self: center;
+    height: 100px;
+    width: 400px;
+}
+
 #immagineP3 {
-    height: 70px;
+    height: 150px;
     width: 400px;
     grid-column-start: 2;
     grid-row-start: 2;
@@ -147,9 +163,52 @@ li {
     justify-self: center;
 }
 
+.cardP5 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#immagineP5 {
+    height: 350px;
+    width: 350px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.immagine {
+    height: 300px;
+    width: 200px;
+    grid-column-start: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.cardP6 {
+    grid-column-start: 1;
+}
+
+.immagineProd2 {
+    grid-column-start: 1;
+    height: 200px;
+    width: 200px;
+}
+
+.cardProd2 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.immagineProd3 {
+    height: 200px;
+    width: 350px;
+}
+
 @media screen and (max-width: 900px) {
     .indice {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .card {
@@ -161,19 +220,44 @@ li {
 
         grid-column-start: 1;
         grid-row-start: 3;
+        width: 320px;
+    }
+
+    #immagineP3 {
+        width: 300px;
+
     }
 
     .content {
-        margin: 5px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .cardP,
+    li,
+    ul {
+        font-size: 15px;
+    }
+
+    ul,
+    li,
+    ol {
+        padding: 20px;
     }
 
     .cover {
         margin: 5px;
+        height: 300px;
+    }
+
+    #titleCover {
+        grid-column-start: 1;
+        grid-column-end: 7;
     }
 
     .continer {
-        margin: 0px;
-        padding: 10px;
+        margin: 10px;
+        padding: 5px;
     }
 
     #immagineP3 {
@@ -192,7 +276,15 @@ li {
         justify-self: center;
     }
 
-    .cardP1 {
+    #immagineP5 {
+        grid-column-start: 1;
+        grid-row-start: 6;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .cardP1,
+    .cardP5 {
         grid-column-start: 1;
         text-align: justify;
         margin: 5px;
@@ -200,9 +292,11 @@ li {
 
 
     .cardP3 {
-
         grid-column-end: 1;
-
-
     }
+
+    .immagine {
+        grid-column-start: 1;
+    }
+
 }
